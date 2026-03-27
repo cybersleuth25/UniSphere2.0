@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Error | UniSphere</title>
+
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="/assets/style.css?compile=false" />
+
+
+    
+    
+    <link rel="stylesheet" href="/assets/style.css?compile=false" />
+
+
+</head>
+<body class="auth-page-body">
+
+    
+    <div class="login-container">
+        <div class="login-card" style="text-align: center;">
+            <h1 style="font-size: 48px; color: var(--urgent-red);">500</h1>
+            <h2>Something went wrong</h2>
+            <p class="small-text" style="color: var(--text-muted); margin-bottom: 20px;">
+                An unexpected error occurred. Please try again later.
+            </p>
+            <a href="/" class="btn">Back to Home</a>
+
+            <div style="margin-top: 20px; padding: 15px; background: rgba(255,0,0,0.1); border-radius: 8px; text-align: left; font-size: 12px; color: #ff6b6b; word-break: break-all;" id="debug-error">
+                <h3>Request Attributes:</h3>
+                
+                    <p><strong>javax.servlet.forward.request_uri:</strong> /</p>
+                
+                    <p><strong>javax.servlet.forward.context_path:</strong> </p>
+                
+                    <p><strong>javax.servlet.forward.servlet_path:</strong> /</p>
+                
+                    <p><strong>javax.servlet.forward.mapping:</strong> org.apache.catalina.core.ApplicationMapping$MappingImpl&#64;d4386dc</p>
+                
+                    <p><strong>org.springframework.web.util.UrlPathHelper.PATH:</strong> /error</p>
+                
+                    <p><strong>org.springframework.web.context.request.async.WebAsyncManager.WEB_ASYNC_MANAGER:</strong> org.springframework.web.context.request.async.WebAsyncManager&#64;43d99c28</p>
+                
+                    <p><strong>org.grails.CONTROLLER:</strong> unisphere.MainController&#64;23c73c39</p>
+                
+                    <p><strong>javax.servlet.error.status_code:</strong> 500</p>
+                
+                    <p><strong>org.springframework.web.servlet.DispatcherServlet.CONTEXT:</strong> org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext&#64;26f06e8f, started on Fri Mar 27 21:14:33 IST 2026, parent: application</p>
+                
+                    <p><strong>org.grails.MODEL_AND_VIEW:</strong> ModelAndView [view=&quot;/main/index&quot;; model={}]</p>
+                
+                    <p><strong>org.grails.rendering.view:</strong> true</p>
+                
+                    <p><strong>org.grails.PAGE_SCOPE:</strong> org.grails.gsp.GroovyPageBinding&#64;9ed04c0</p>
+                
+                    <p><strong>org.grails.CONTROLLER_NAME_ATTRIBUTE:</strong> main</p>
+                
+                    <p><strong>org.springframework.web.util.ServletRequestPathUtils.PATH:</strong> /error</p>
+                
+                    <p><strong>org.springframework.web.servlet.DispatcherServlet.LOCALE_RESOLVER:</strong> org.springframework.web.servlet.i18n.SessionLocaleResolver&#64;4d54d1fb</p>
+                
+                    <p><strong>org.grails.url.match.info:</strong> 500</p>
+                
+                    <p><strong>org.grails.RESPONSE_FORMATS:</strong> [MimeType { name=*/*,extension=all,parameters=[q:1.0] }]</p>
+                
+                    <p><strong>org.springframework.web.servlet.DispatcherServlet.OUTPUT_FLASH_MAP:</strong> FlashMap [attributes={}, targetRequestPath=null, targetRequestParams={}]</p>
+                
+                    <p><strong>org.grails.GRAILS_CONTROLLER_CLASS:</strong> Artefact &gt; Main</p>
+                
+                    <p><strong>org.springframework.web.servlet.DispatcherServlet.FLASH_MAP_MANAGER:</strong> org.springframework.web.servlet.support.SessionFlashMapManager&#64;4b9e350d</p>
+                
+                    <p><strong>org.grails.RESPONSE_OUT:</strong> org.grails.taglib.encoder.OutputEncodingStack$OutputProxyWriter&#64;57a916af</p>
+                
+                    <p><strong>org.grails.ACTION_NAME_ATTRIBUTE:</strong> index</p>
+                
+                    <p><strong>org.grails.web.sitemesh.GrailsLayoutView.GSP_SITEMESH_PAGE:</strong> org.grails.web.sitemesh.GSPSitemeshPage&#64;9425738</p>
+                
+                    <p><strong>org.grails.web.encoder.OUTPUT_ENCODING_STACK:</strong> org.grails.taglib.encoder.OutputEncodingStack&#64;3fce4fcd</p>
+                
+                    <p><strong>javax.servlet.error.message:</strong> </p>
+                
+                    <p><strong>javax.servlet.error.servlet_name:</strong> grailsDispatcherServlet</p>
+                
+                    <p><strong>org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter$TimingContext:</strong> org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter$TimingContext&#64;329662a6</p>
+                
+                    <p><strong>org.springframework.web.servlet.DispatcherServlet.THEME_SOURCE:</strong> org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext&#64;26f06e8f, started on Fri Mar 27 21:14:33 IST 2026, parent: application</p>
+                
+                    <p><strong>org.grails.FLASH_SCOPE:</strong> [:]</p>
+                
+                    <p><strong>javax.servlet.error.request_uri:</strong> /</p>
+                
+                    <p><strong>org.springframework.web.servlet.DispatcherServlet.THEME_RESOLVER:</strong> org.springframework.web.servlet.theme.FixedThemeResolver&#64;556727f4</p>
+                
+                    <p><strong>javax.servlet.error.exception:</strong> org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.grails.gsp.GroovyPagesException: Error processing GroovyPageView: [grails-app/views/main/index.gsp:76] Error executing tag &lt;g:render&gt;: Error evaluating expression [new Date().format(&#39;yyyy&#39;)] on line [56]: No signature of method: java.util.Date.format() is applicable for argument types: (String) values: [yyyy]
+Possible solutions: from(java.time.Instant), stream(), getAt(java.lang.String), parse(java.lang.String), print(java.io.PrintWriter), print(java.lang.Object)</p>
+                
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.2/marked.min.js"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    
+    <script type="text/javascript" src="/assets/application.js?compile=false" ></script>
+
+
+</body>
+</html>

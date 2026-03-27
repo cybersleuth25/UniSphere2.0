@@ -1,0 +1,30 @@
+# Gradle
+.gradle/
+build/
+out/
+target/
+
+# Grails & Databases
+*.log
+*.db
+*.trace.db
+devDb.mv.db
+devDb.trace.db
+
+# Compiled source
+*.class
+*.jar
+*.war
+*.ear
+
+# IDE specific
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+
+# OS specific
+.DS_Store
+Thumbs.db
