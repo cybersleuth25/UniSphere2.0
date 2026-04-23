@@ -8,13 +8,23 @@
     <meta charset="utf-8"/>
     <title>Reset Password</title>
     <asset:stylesheet src="style.css"/>
+    <%-- Google Fonts: Midnight Ethereal Editorial --%>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Karla:wght@400;500;700&display=swap">
 </head>
 <body class="auth-page-body">
 
-    <div id="particles-js"></div>
+    <%-- Ethereal Background Effects --%>
+    <div class="noise-overlay"></div>
+    <div class="ethereal-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
 
     <div class="login-container">
-        <div class="login-card">
+        <div class="login-card stagger-1">
             <h1>Reset Password</h1>
             <form id="resetPasswordForm">
                 <div class="form-group">
@@ -30,8 +40,6 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <asset:javascript src="particles-config.js"/>
     <asset:javascript src="application.js"/>
 </body>
 </html>

@@ -41,6 +41,9 @@ grails:
     urlmapping:
         cache:
             maxsize: 1000
+    cors:
+        enabled: true
+        allowedOrigins: ['*']
     controllers:
         defaultScope: singleton
         upload:
@@ -83,7 +86,8 @@ spring:
                 - '*.properties'
 
 server:
-    port: 8080
+    address: 0.0.0.0
+    port: 8090
 
 ---
 # Development environment
@@ -114,7 +118,7 @@ environments:
             driverClassName: com.mysql.cj.jdbc.Driver
             dialect: org.hibernate.dialect.MySQL8Dialect
             username: root
-            password: ''
+            # password: '' # IMPORTANT: Configure via ENV in production
             properties:
                 jmxEnabled: true
                 initialSize: 5
@@ -133,6 +137,8 @@ hibernate:
 ---
 # File upload settings
 unisphere:
+    jwt:
+        secret: 'UniSphereSuperSecretKeyForDevelopmentOnly1234567890!'
     upload:
         directory: uploads/
         maxAvatarSize: 2097152

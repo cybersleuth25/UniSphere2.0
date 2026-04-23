@@ -14,10 +14,21 @@
     <meta charset="UTF-8">
     <title>${user.username}'s Profile</title>
     <asset:stylesheet src="style.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600&display=swap">
+    <%-- Google Fonts: Midnight Ethereal Editorial --%>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Karla:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body class="profile-page-body">
+
+    <%-- Ethereal Background Effects --%>
+    <div class="noise-overlay"></div>
+    <div class="ethereal-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
 
     <div class="profile-container stagger-1">
         <div class="profile-avatar-wrapper">
@@ -82,7 +93,7 @@
     <%-- Pass server data to JavaScript (same pattern as PHP's serverData) --%>
     <script>
         const serverData = {
-            user: ${userJson},
+            user: ${raw(userJson)},
             isOwnProfile: ${isOwnProfileJson}
         };
     </script>

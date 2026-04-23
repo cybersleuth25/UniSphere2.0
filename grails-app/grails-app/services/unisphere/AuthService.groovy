@@ -3,6 +3,8 @@ package unisphere
 import grails.gorm.transactions.Transactional
 import java.security.MessageDigest
 
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
+
 /**
  * AuthService - handles authentication, registration, and password reset.
  *
@@ -10,6 +12,8 @@ import java.security.MessageDigest
  */
 @Transactional
 class AuthService {
+
+    private static final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder()
 
     /**
      * Authenticate a user by email and password.
@@ -140,14 +144,14 @@ class AuthService {
      */
     private String hashPassword(String password) {
         // Using Spring Security's BCrypt encoder
-        return new org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder().encode(password)
+        return passwordEncoder.encode(password)
     }
 
     /**
      * Verify password against BCrypt hash (equivalent to PHP's password_verify).
      */
     private boolean verifyPassword(String rawPassword, String hashedPassword) {
-        return new org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder().matches(rawPassword, hashedPassword)
+        return passwordEncoder.matches(rawPassword, hashedPassword)
     }
 
     /**

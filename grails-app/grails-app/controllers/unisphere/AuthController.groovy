@@ -10,6 +10,7 @@ import grails.converters.JSON
 class AuthController {
 
     AuthService authService
+    JwtService jwtService
 
     /**
      * Render login page.
@@ -39,9 +40,12 @@ class AuthController {
             session.user_email = user.email
             session.user_role = user.role
 
+            String token = jwtService.generateToken(user.email)
+
             render([
                 success: true,
                 message: 'Login successful.',
+                token: token,
                 user: [
                     username: user.username,
                     email: user.email,
@@ -84,6 +88,7 @@ class AuthController {
         if (result.success) {
             session.user_email = params.newEmail
             session.user_role = 'student'
+            result.token = jwtService.generateToken(params.newEmail)
         } else {
             response.status = result.message?.contains('already registered') ? 409 : 500
         }

@@ -58,6 +58,9 @@ class UrlMappings {
         "/api/notifications"(controller: 'notification', action: 'list')
         "/api/notifications/markRead"(controller: 'notification', action: 'markRead')
 
+        // ===== File Serving (uploaded images) =====
+        "/uploads/$filename"(controller: 'file', action: 'serve')
+
         // ===== Default mappings =====
         "500"(view: '/error')
         "404"(view: '/notFound')

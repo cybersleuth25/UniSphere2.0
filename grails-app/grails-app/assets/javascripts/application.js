@@ -41,7 +41,8 @@ function debounce(func, delay) {
 
 function generateAvatarUrl(username, seed) {
     const seedValue = seed || username;
-    return `https://api.dicebear.com/7.x/bottts-neutral/svg?seed=${encodeURIComponent(seedValue)}`;
+    // Changed to 'micah' style for a premium human aesthetic that fits the editorial vibe
+    return `https://api.dicebear.com/9.x/micah/svg?seed=${encodeURIComponent(seedValue)}&backgroundColor=transparent`;
 }
 function getAvatarDisplayUrl(user) {
     if (user.avatar_path) return `${user.avatar_path}?t=${new Date().getTime()}`;

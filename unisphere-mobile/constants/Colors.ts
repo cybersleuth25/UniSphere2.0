@@ -1,0 +1,32 @@
+export const Colors = {
+  light: {
+    background: '#F9F8F6',
+    surface: 'rgba(255, 255, 255, 0.85)',
+    surfaceSolid: '#FFFFFF',
+    text: '#1A1A1A',
+    textSecondary: '#666666',
+    textMuted: '#999999',
+    accent: '#C49A45',
+    border: 'rgba(26,26,26,0.15)',
+    borderLight: 'rgba(26,26,26,0.1)',
+    tabBar: '#F9F8F4',
+    tabBarInactive: '#999999',
+    error: '#E74C3C',
+    success: '#2ECC71',
+  },
+  dark: {
+    background: '#121212',
+    surface: 'rgba(30, 30, 30, 0.85)',
+    surfaceSolid: '#1E1E1E',
+    text: '#FDFCF0',
+    textSecondary: '#A0A0A0',
+    textMuted: '#666666',
+    accent: '#D4AF37',
+    border: 'rgba(255,255,255,0.15)',
+    borderLight: 'rgba(255,255,255,0.1)',
+    tabBar: '#1A1A1A',
+    tabBarInactive: '#A0A0A0',
+    error: '#CF6679',
+    success: '#03DAC6',
+  }
+};
